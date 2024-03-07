@@ -32,7 +32,7 @@ public class Bus extends Vehicle
     }
     public String toString()
     {
-        return "This bus has " + doors + " doors, " + windows + " windows, and " + super.toString();
+        return "Bus: " + doors + " doors, " + windows + " windows, and " + super.toString();
     }
 
     public void print()

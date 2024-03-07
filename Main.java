@@ -15,8 +15,6 @@ public class Main
         System.out.println(schoolBus.getCost());
         System.out.println(schoolBus.getSeats());
         System.out.println("------------------------------------------------");
-
-
         fortniteBattleBus.rev();
         tonkaTruck.rev();
 

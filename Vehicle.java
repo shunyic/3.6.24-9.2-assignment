@@ -33,7 +33,7 @@ public class Vehicle
     }
     public String toString()
     {
-        return "costs $" + cost + ", and seats " + seats + " people.";
+        return "Vehicle: costs $" + cost + ", and seats " + seats + " people.";
     }
 
     public void print()
