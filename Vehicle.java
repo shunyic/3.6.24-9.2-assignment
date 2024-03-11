@@ -3,6 +3,8 @@ public class Vehicle
     private double cost;
     private int seats;
 
+    boolean doors = false;
+
     public Vehicle(double c, int s)
     {
         cost = c;
@@ -30,6 +32,16 @@ public class Vehicle
     public int getSeats()
     {
         return seats;
+    }
+
+    public boolean hasDoors()
+    {
+        return doors;
+    }
+
+    public void giveDoor()
+    {
+        doors = true;
     }
     public String toString()
     {

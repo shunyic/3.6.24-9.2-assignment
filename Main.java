@@ -17,6 +17,13 @@ public class Main
         System.out.println("------------------------------------------------");
         fortniteBattleBus.rev();
         tonkaTruck.rev();
-
+        System.out.println("------------------------------------------------");
+        System.out.println(fortniteBattleBus.getDoors());
+        System.out.println(tonkaTruck.hasDoors());
+        fortniteBattleBus.giveDoor(10);
+        tonkaTruck.giveDoor();
+        System.out.println("------------------------------------------------");
+        System.out.println(fortniteBattleBus.getDoors());
+        System.out.println(tonkaTruck.hasDoors());
     }
 }
