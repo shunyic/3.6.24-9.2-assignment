@@ -26,6 +26,10 @@ public class Bus extends Vehicle
         return doors;
     }
 
+    public void giveDoor(int i)
+    {
+        doors += i;
+    }
     public int getWindows()
     {
         return windows;
