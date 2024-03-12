@@ -9,16 +9,33 @@ public class Vehicle
     {
         cost = c;
         seats = s;
-        print();
+//        print();
     }
 
     public Vehicle()
     {
         cost = 0.00;
         seats = 2;
-        print();
+//        print();
     }
-
+    public void terminate(Vehicle v)
+    {
+        doors = false;
+        seats = 0;
+        cost = 0;
+    }
+    public void setCost(int c)
+    {
+        cost = c;
+    }
+    public void setSeasts(int s)
+    {
+        seats = s;
+    }
+    public void setDoor(boolean d)
+    {
+        doors = d;
+    }
     public void rev()
     {
         System.out.println("VROOOOOOOOOOOOOOOOOM");
@@ -47,6 +64,7 @@ public class Vehicle
     {
         return "Vehicle: costs $" + cost + ", and seats " + seats + " people.";
     }
+
 
     public void print()
     {

@@ -39,6 +39,14 @@ public class Bus extends Vehicle
         return "Bus: " + doors + " doors, " + windows + " windows, and " + super.toString();
     }
 
+    public void terminate(Vehicle v)
+    {
+        doors = 0;
+        windows = 0;
+        super.setCost(0);
+        super.setSeasts(0);
+        super.setDoor(false);
+    }
     public void print()
     {
         System.out.println(toString());
