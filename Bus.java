@@ -25,7 +25,15 @@ public class Bus extends Vehicle
     {
         return doors;
     }
+    public double getCost()
+    {
+        return super.getCost();
+    }
 
+    public int getSeats()
+    {
+        return super.getSeats();
+    }
     public void giveDoor(int i)
     {
         doors += i;
@@ -39,12 +47,12 @@ public class Bus extends Vehicle
         return "Bus: " + doors + " doors, " + windows + " windows, and " + super.toString();
     }
 
-    public void terminate(Vehicle v)
+    public void terminate()
     {
         doors = 0;
         windows = 0;
         super.setCost(0);
-        super.setSeasts(0);
+        super.setSeats(0);
         super.setDoor(false);
     }
     public void print()

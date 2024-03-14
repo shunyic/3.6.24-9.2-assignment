@@ -18,7 +18,7 @@ public class Vehicle
         seats = 2;
 //        print();
     }
-    public void terminate(Vehicle v)
+    public void terminate()
     {
         doors = false;
         seats = 0;
@@ -28,7 +28,7 @@ public class Vehicle
     {
         cost = c;
     }
-    public void setSeasts(int s)
+    public void setSeats(int s)
     {
         seats = s;
     }
@@ -59,6 +59,11 @@ public class Vehicle
     public void giveDoor()
     {
         doors = true;
+    }
+
+    public boolean equals(Object o)
+    {
+        return cost == ((Bus)o).getCost() && seats == ((Bus)o).getSeats();
     }
     public String toString()
     {

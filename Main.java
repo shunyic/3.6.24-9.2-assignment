@@ -26,20 +26,27 @@ public class Main
 //        System.out.println(fortniteBattleBus.getDoors());
 //        System.out.println(tonkaTruck.hasDoors());
         Vehicle myBus = new Bus(500000, 100, 20, 100);
-        myBus.terminate(myBus);
-        myBus.print();
-        Vehicle[] junkyard = {new Bus(), new Bus(150000, 10, 2, 10)};
-        Vehicle[][] junkyards = {{new Bus(), new Bus(10000, 5, 1, 5)}, {new Bus(15000, 10, 2, 10), new Bus(2000000, 50, 2, 50)}};
-        for (Vehicle b : junkyard)
-        {
-            b.print();
-        }
-        for (Vehicle[] v : junkyards)
-        {
-            for (Vehicle rV : v)
-            {
-                rV.print();
-            }
-        }
+        Vehicle myBusCopy = new Bus(500000, 100, 20, 100);
+        Vehicle mySchoolBus = new Bus(500, 100, 20, 100);
+        System.out.println(myBus.equals(myBusCopy));
+        System.out.println(myBus.equals(mySchoolBus));
+        System.out.println(myBus);
+        System.out.println(mySchoolBus);
+        myBus.terminate();
+//        myBus.terminate(myBus);
+//        myBus.print();
+//        Vehicle[] junkyard = {new Bus(), new Bus(150000, 10, 2, 10)};
+//        Vehicle[][] junkyards = {{new Bus(), new Bus(10000, 5, 1, 5)}, {new Bus(15000, 10, 2, 10), new Bus(2000000, 50, 2, 50)}};
+//        for (Vehicle b : junkyard)
+//        {
+//            b.print();
+//        }
+//        for (Vehicle[] v : junkyards)
+//        {
+//            for (Vehicle rV : v)
+//            {
+//                rV.print();
+//            }
+//        }
     }
 }
